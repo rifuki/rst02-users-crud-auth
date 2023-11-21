@@ -1,0 +1,18 @@
+[package]
+name = "rst02-users-crud-auth"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "4.4.0"
+argon2 = "0.5.2"
+derive = "1.0.0"
+dotenv = "0.15.0"
+lazy_static = "1.4.0"
+regex = "1.10.2"
+serde = { version = "1.0.193", features = ["derive"] }
+serde_json = "1.0.108"
+sqlx = { version = "0.7.2", features = ["runtime-tokio", "mysql", "macros"] }
+validator = { version = "0.16.1", features = ["derive", "validator_derive"] }
